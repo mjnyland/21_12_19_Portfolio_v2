@@ -1,0 +1,167 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #011627;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 1em;
+    font-size: 20pt;
+    color: #FDFFFC;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 3em;
+    color: #FF9F1C;
+    font-size: 12pt;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    font-size: 10pt;
+    font-weight: 300;
+    color: #dedee0;
+    text-align: center;
+}
+
+a{
+    font-weight: 500;
+    color: #FDFFFC;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 10vh auto;
+}
+
+.card-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-link{
+    width: 100%;
+    height: 100%;
+}
+
+.project{
+    background-color: #000f1b;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000f1b;
+    z-index: 20;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.contact-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 90px auto;
+}
+
+@media (min-width: 768px) {
+    h1{
+        font-size: 25pt;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    h2{
+        font-size: 14pt;
+        text-align: left;
+        width: 80%;
+    }
+
+    h3{
+        text-align: left;
+        font-size: 10pt;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 30pt;
+        margin-bottom: 0;
+    }
+
+    h2{
+        font-size: 20pt;
+        text-align: left;
+        width: 70%;
+        margin-bottom: 3em;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img-container{
+        height: 200px;
+    }
+
+}
