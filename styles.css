@@ -8,9 +8,20 @@
 
 
 
+nav{
+    display: flex;
+    width: 85%;
+    margin: 3em auto;
+}
 
+nav ul{
+    padding: 0;
+}
 
-
+nav li{
+    display: inline;
+    text-decoration: none;
+}
 
 body{
     background-color: #011627;
