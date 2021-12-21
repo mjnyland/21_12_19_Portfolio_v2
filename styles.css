@@ -12,6 +12,7 @@ nav{
     display: flex;
     width: 85%;
     margin: 3em auto;
+    justify-content: center;
 }
 
 nav ul{
@@ -130,6 +131,11 @@ img{
 }
 
 @media (min-width: 768px) {
+    nav{
+        justify-content: flex-start;
+    }
+
+    
     h1{
         font-size: 25pt;
         margin-bottom: 0;
